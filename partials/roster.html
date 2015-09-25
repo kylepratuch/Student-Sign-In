@@ -1,6 +1,7 @@
 <div class="color-box">
   <div class="column-box">
     <div ng-show="students.length">
+
       <div ng-show="signedInStudents.length">
         <h2><em>Here</em></h2>
         <ul>
@@ -8,10 +9,12 @@
             {{ item.name }}
           </li>
         </ul>
+      </div>
 
+      <div ng-hide="!signedInStudents.length">
         <h2><em>Not here</em></h2>
         <ul>
-          <li ng-repeat="item in signedInStudents = (students | filter: {signedIn: !true})">
+          <li ng-repeat="item in signedInStudents = (students | filter: {signedIn: false})">
             {{ item.name }}
         </ul>
       </div>
