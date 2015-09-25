@@ -3,9 +3,5 @@ attendance.factory('StudentsFactory', function StudentsFactory() {
   factory.students = [{name:"George Michael Bluth", signedIn:false},
                       {name:"Maeby Funke", signedIn:false},
                       {name:"Steve Holt", signedIn:false}];
-
-
-
-  }
-
+  return factory;
 });
