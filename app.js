@@ -8,10 +8,16 @@ attendance.config(function($stateProvider, $urlRouterProvider) {
     templateUrl:"partials/home.html"
   });
 
-  $stateProvider.state('students', {
+  $stateProvider.state('sign-in', {
     url:"/students",
-    templateUrl:"partials/students.html",
-    controller:"StudentsCtrl"
+    templateUrl:"partials/sign-in.html",
+    controller:"SignInCtrl"
   });
+
+  $stateProvider.state('roster', {
+    url:"/roster",
+    templateUrl:"partials/roster.html",
+    controller:"SignInCtrl"
+  })
 
 });
