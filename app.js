@@ -1,11 +1,16 @@
 
-var signIn = angular.module('signIn', ['ui.router']);
+var attendance = angular.module('attendance', ['ui.router']);
 
-signIn.config(function($stateProvider, $urlRouterProvider) {
+attendance.config(function($stateProvider, $urlRouterProvider) {
 
   $stateProvider.state('home', {
     url:"",
     templateUrl:"partials/home.html"
+  });
+
+  $stateProvider.state('students', {
+    url:"students",
+    templateUrl:"partials/students.html"
   });
 
 });
