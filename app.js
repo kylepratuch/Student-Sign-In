@@ -18,6 +18,6 @@ attendance.config(function($stateProvider, $urlRouterProvider) {
     url:"/roster",
     templateUrl:"partials/roster.html",
     controller:"SignInCtrl"
-  })
+  });
 
 });

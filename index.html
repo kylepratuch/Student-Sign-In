@@ -9,10 +9,20 @@
   <script src="controllers/StudentsController.js"></script>
   <script src="controllers/SignInController.js"></script>
   <script src="services/StudentsFactory.js"></script>
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <div class="container">
+  <div class="navbar">
+   <a ui-sref="home"><h1 class="nav-text nav-title">AngularJS 101</h1></a>
+
+   <div class="nav-links">
+     <a class="nav-text" ui-sref="sign-in">Sign In |</a>
+     <a class="nav-text" ui-sref="roster">Who's here?</a>
+   </div>
+  </div>
+
+  <div class="wrapper">
     <div ui-view></div>
   </div>
 </body>
