@@ -1,0 +1,17 @@
+<div ng-show="students.length">
+  <a ui-sref="sign-in">Sign In</a>
+  <div ng-show="signedInStudents.length">
+    <h2>Here</h2>
+    <ul>
+      <li ng-repeat="item in signedInStudents = (students | filter: {signedIn: true})">
+        {{ item.name }}
+      </li>
+    </ul>
+
+    <h2>Not here</h2>
+    <ul>
+      <li ng-repeat="item in signedInStudents = (students | filter: {signedIn: false})">
+        {{ item.name }}
+    </ul>
+  </div>
+</div>
