@@ -20,4 +20,10 @@ attendance.config(function($stateProvider, $urlRouterProvider) {
     controller:"SignInCtrl"
   });
 
+  $stateProvider.state('addStudent', {
+    url:"/students/add",
+    templateUrl:"partials/add.html",
+    controller:"StudentsCtrl"
+  });
+
 });

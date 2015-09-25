@@ -58,7 +58,7 @@ body {
 
 .sqr-field {
   height:110%;
-  border:solid 1px #C5CDD8;
+  border:solid 1px #B2D8B2;
   margin:0px 0px 2px 2px;
 }
 
@@ -67,6 +67,12 @@ body {
   background-color:#990000;
   color:white;
   padding:4px 6px 4px 6px;
+}
+
+.sqr-button-green {
+  border:solid #198C19 1px;
+  background-color:#4CA64C;
+  color:white;
 }
 
 .sqr-button {

@@ -1,21 +1,21 @@
-<div class="color-box">
-  <div class="column-box">
-    <div ng-show="students.length">
-      <h2><em>Sign In or Sign Out:</em></h2>
+<div class="column-box">
+  <div ng-show="students.length">
+    <h2><em>Sign In or Sign Out:</em></h2>
 
-      <div ng-repeat = "item in students">
-        <ul>
-          <li>{{ item.name }}
-            <div ng-hide="item.signedIn">
-              <button class="sqr-button" type="button" ng-click="signInStudent(item)">Sign In</button>
-            </div>
-            <div ng-hide="!item.signedIn">
-              <button class="sqr-button-red" type="button" ng-click="signOutStudent(item)">Sign Out</button>
-            </div>
-          </li>
-        </ul>
-      </div>
-      
+    <div ng-repeat = "item in students">
+      <ul>
+        <li><strong>{{ item.name }}</strong>
+          <div ng-hide="item.signedIn">
+            <button class="sqr-button" type="button" ng-click="signInStudent(item)">Sign In</button>
+          </div>
+          <div ng-hide="!item.signedIn">
+            <button class="sqr-button-red" type="button" ng-click="signOutStudent(item)">Sign Out</button>
+          </div>
+        </li>
+      </ul>
     </div>
+
+    <a ui-sref="addStudent">Don't see your name? Add yourself!</a>
+
   </div>
 </div>
