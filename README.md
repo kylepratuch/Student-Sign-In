@@ -10,14 +10,14 @@ _Student Sign-In allows students to sign in to class at the beginning of the day
 
 ## Setup
 
-_Clone this repository. In your terminal: ```git clone https://github.com/kylepratuch/Student-Sign-In.git ```
- Start a simple HTTP server in top level of project folder: ```python -m SimpleHTTPServer```
- Navigate to localhost:8000._
+* Clone this repository. In your terminal: ```git clone https://github.com/kylepratuch/Student-Sign-In.git ```
+* Start a simple HTTP server in top level of project folder: ```python -m SimpleHTTPServer```
+* Navigate to localhost:8000.
 
 ## Technologies Used
 
-_This project makes use of:
-Angular, Javascript, HTML, CSS, Bootstrap._
+_This project makes use of: 
+AngularJS, JavaScript, HTML, CSS._
 
 
 ### Legal
